@@ -26,7 +26,8 @@ apt-get upgrade -y && \
 apt-get install -y --no-install-recommends \
     gpg gpg-agent libelf-dev libmnl-dev libc-dev iptables libgcc-8-dev \
     bash-completion binutils binutils-dev make git curl \
-    ca-certificates xz-utils gcc pkg-config bison flex build-essential && \
+    ca-certificates xz-utils gcc pkg-config bison flex build-essential \
+    zlib1g-dev python3 && \
 apt-get purge --auto-remove && \
 apt-get clean
 
